@@ -12,7 +12,7 @@ _Para descargar el repositorio podemos hacerlo en la opción de "Clone or Downlo
 
 ### Pre-requisitos
 
-- Python3 (PIP instalado, en windwos viene con el pauqete, en linux se debe instalar por consola)
+- Python3 (PIP instalado, en windwos viene con el paquete, en linux se debe instalar por consola)
 - Mysql
 - HeidiSql (o algún cliente para mysql)
 - IDE
@@ -20,18 +20,18 @@ _Para descargar el repositorio podemos hacerlo en la opción de "Clone or Downlo
 
 ### Dependencias
 
-_- pip install flask_
-_- pip install flask-mysql_
+- pip install flask
+- pip install flask-mysql
 
 
 ### Despliegue
 
-_- Una vez descargado el repositorio_
-_- Verificaremos los programas y dependencias necesarias_
-_- Crearemos nuestra base de datos con el nombre "centro-vacunas" e insertaremos los datos (sql/tablas.sql, sql/datos.sql)_
-_- Abriremos una consola y ejecutaremos el comando "pip install Flask"_
-_- Ejecutaremos el archivo "index.py", puede ser por consola con el comando "python index.py" o simplemente le damos doble click_
-_- Copiaremos la ip que nos muestra la consola y la pegaremos en nuestro navegador._
+- Una vez descargado el repositorio
+- Verificaremos los programas y dependencias necesarias
+- Crearemos nuestra base de datos con el nombre "centro-vacunas" e insertaremos los datos (sql/tablas.sql, sql/datos.sql)
+- Abriremos una consola y ejecutaremos el comando "pip install Flask"
+- Ejecutaremos el archivo "index.py", puede ser por consola con el comando "python index.py" o simplemente le damos doble click
+- Copiaremos la ip que nos muestra la consola y la pegaremos en nuestro navegador.
 
 ## Construido con
 
