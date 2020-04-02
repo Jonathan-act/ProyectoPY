@@ -1,0 +1,57 @@
+<!--Jonathan Carrasco Toledo - 19.906.880-6-->
+{% extends "layout.html" %}
+
+{% block body %}
+
+{% with mensaje = get_flashed_messages() %}
+{% if mensaje %}
+{% for mensajes in mensaje %}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  {{ mensaje }}
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+{% endfor %}
+{% endif %}
+{% endwith %}
+
+<div class="text-center">
+
+  <h3>Pacientes Registrados</h3>
+  <hr>
+  <div class="">
+    <form class="form-inline">
+      <!--<input class="form-control ml-2 mr-4 col" type="search" placeholder="Buscar paciente" aria-label="Search">-->
+      <a class="btn btn-outline-danger ml-auto mr-3" href="/agregar_paciente">Agregar paciente</a>
+    </form>
+  </div>
+  <br>
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th >RUT</th>
+        <th >Nombre</th>
+        <th >Fecha Nacimiento</th>
+        <th >Historial</th>
+        <th>Vacunar</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for paciente in pacientes %}
+      <tr>
+        <td>{{ paciente['rut_pac'] }}</td>
+        <td>{{ paciente['nombre_pac'] }}</td>
+        <td>{{ paciente['f_nacimiento'] }}</td>
+        <td><a href="/historial/{{ paciente['rut_pac'] }}" value="Submit">Revisar</a></td>
+        <td><a href="/vacunar/{{ paciente['rut_pac'] }}">Registrar vacuna</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,32 @@
+<!--Jonathan Carrasco Toledo - 19.906.880-6-->
+{% extends "layout.html" %}
+
+{% block body %}
+
+<h3 class="text-center">Nueva Vacuna</h3>
+<hr>
+
+<div class="card col-8 col-md-offset">
+    <form class="form-horizontal" method="post" action="/agregar_vacuna">
+        <fieldset class="text-center">
+            <legend class="header">Vacuna para</legend>
+
+              <div class="form-group">
+                  <div class="col-md-8 co-md-offset-2">
+                    <label>Nombre enfermedad</label>
+                      <input name="nombre_enfermedad" type="text" placeholder="Nombre enfermedad" class="form-control">
+                  </div>
+              </div>
+
+              <div class="form-group">
+                  <div class="col-md-12 text-center">
+                      <button type="submit" class="btn btn-danger btn-lg">Registrar</button>
+                  </div>
+              </div>
+          </fieldset>
+      </form>
+    </div>
+
+    <br><br><br><br>
+
+{% endblock %}

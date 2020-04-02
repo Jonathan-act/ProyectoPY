@@ -1,0 +1,52 @@
+<!--Jonathan Carrasco Toledo - 19.906.880-6-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Centro de Vacunas</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="{{url_for ('static', filename='css/bootstrap.min.css')}}" crossorigin="anonymus">
+    <link rel="stylesheet" href="{{url_for ('static', filename='css/bootstrap-grid.min.css')}}" crossorigin="anonymus">
+    <link rel="stylesheet" href="{{url_for ('static', filename='css/bootstrap-reboot.min.css')}}" crossorigin="anonymus">
+    <!--Fin Bootstrap-->
+  </head>
+
+<!--COMIENZO DEL BODY-->
+  <body>
+    <nav class="navbar navbar-expand-lg bg-danger">
+    <a class="navbar-brand text-light" href="/">Centro de Vacunas</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-light" href="/">Pacientes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="/vacunas_disponibles">Vacunas</a>
+        </li>
+      </ul>
+    </div>
+    </nav>
+    <br>
+    {% block body %}
+    <!--Cuerpo correspondiente-->
+    {% endblock %}
+
+    <footer class="text-center text-muted">
+      <hr>
+      <label>Todos los derechos reservados © 2020 Jonathan Carrasco</label>
+    </footer>
+
+    <script src="{{url_for ('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{url_for ('static', filename='js/bootstrap.min.js')}}"></script>
+    <script src="{{url_for ('static', filename='js/jquery-3.4.1.min.map')}}"></script>
+
+
+  </body>
+<!--FIN DEL BODY-->
+</html>

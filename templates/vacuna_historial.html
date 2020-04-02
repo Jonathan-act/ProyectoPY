@@ -1,0 +1,33 @@
+<!--Jonathan Carrasco Toledo - 19.906.880-6-->
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="text-center">
+
+  <h3>Historial de Vacuna</h3>
+  <hr>
+
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th >RUT</th>
+        <th >Nombre</th>
+        <th>Fecha</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for recibe_vacuna in vacunados %}
+      <tr>
+        <td>{{ recibe_vacuna['rut_pac'] }}</td>
+        <td>{{ recibe_vacuna['nombre_pac'] }}</td>
+        <td>{{ recibe_vacuna['fecha_vacuna'] }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+
+</div>
+
+{% endblock %}

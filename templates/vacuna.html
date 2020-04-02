@@ -1,0 +1,39 @@
+<!--Jonathan Carrasco Toledo - 19.906.880-6-->
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="text-center">
+
+  <h3>Vacunas</h3>
+  <hr>
+  <div class="">
+    <form class="form-inline">
+      <!--<input class="form-control ml-2 mr-4 col" type="search" placeholder="Buscar vacuna" aria-label="Search">-->
+      <a class="float-right btn btn-outline-danger ml-auto mr-3" href="/nueva_vacuna">Agregar vacuna</a>
+    </form>
+  </div>
+  <br>
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th>Nombre Vacuna</th>
+        <th>Fecha Ingreso</th>
+        <th>Pacientes vacunados</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for vacuna in vacunas %}
+      <tr>
+        <td>{{ vacuna['nombre_enfermedad'] }}</td>
+        <td class="">{{ vacuna['f_ingreso'] }}</td>
+        <td><a href="/historialvacuna/{{ vacuna['nombre_enfermedad'] }}">Revisar</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+</div>
+
+
+{% endblock %}

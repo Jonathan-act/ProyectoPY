@@ -1,0 +1,31 @@
+<!--Jonathan Carrasco Toledo - 19.906.880-6-->
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="text-center">
+
+  <h3>Historial de paciente</h3>
+  <hr>
+
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th >Nombre Vacuna</th>
+        <th >Fecha</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for recibe_vacuna in vacuna %}
+      <tr>
+        <td>{{ recibe_vacuna['nombre_enfermedad'] }}</td>
+        <td>{{ recibe_vacuna['fecha_vacuna'] }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+
+</div>
+
+{% endblock %}
