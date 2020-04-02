@@ -35,8 +35,6 @@ _Para descargar el repositorio podemos hacerlo en la opción de "Clone or Downlo
 
 ## Construido con
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
 * [Bootstrap](https://getbootstrap.com) - Framework para el front-end
 * [Python3](https://www.python.org) - Lenguaje de programacíon
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/) - Framework de Python
