@@ -12,10 +12,10 @@ _Para descargar el repositorio podemos hacerlo en la opción de "Clone or Downlo
 
 ### Pre-requisitos
 
-_- Python3 (PIP instalado, en windwos viene con el pauqete, en linux se debe instalar por consola)_
-_- Mysql_
-_- HeidiSql (o algún cliente para mysql)_
-_- IDE_
+- Python3 (PIP instalado, en windwos viene con el pauqete, en linux se debe instalar por consola)
+- Mysql
+- HeidiSql (o algún cliente para mysql)
+- IDE
 
 
 ### Dependencias
@@ -33,7 +33,7 @@ _- Abriremos una consola y ejecutaremos el comando "pip install Flask"_
 _- Ejecutaremos el archivo "index.py", puede ser por consola con el comando "python index.py" o simplemente le damos doble click_
 _- Copiaremos la ip que nos muestra la consola y la pegaremos en nuestro navegador._
 
-## Construido con 🛠️
+## Construido con
 
 _Menciona las herramientas que utilizaste para crear tu proyecto_
 
