@@ -15,7 +15,7 @@ _Para descargar el repositorio podemos hacerlo en la opción de "Clone or Downlo
 - Python3 (PIP instalado, en windwos viene con el paquete, en linux se debe instalar por consola)
 - Mysql
 - HeidiSql (o algún cliente para mysql)
-- IDE
+- Editor de texto
 
 
 ### Dependencias
